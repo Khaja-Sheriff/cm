@@ -1,0 +1,108 @@
+<div class="ttl">
+    <h2>Add a new crew member</h2>
+    <div class="btns">
+        <button class="btn btn2"><i class="fas fa-ban"></i>Cancel</button>
+        <button class="btn"><i class="fas fa-save"></i>Save</button>
+    </div>
+</div>
+<div class="form_wrap_sec">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Member Information</h2>
+        </div>
+        <div class="col-md-8">
+            <div class="panel ui_panel">
+                <div class="panel-heading">
+                    <div class="form-group">
+                        <label>Crew ID</label>
+                        <span>CR1001</span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>Crew full name</label>
+                        <input type="text" class="form-control input-lg" />
+                    </div>
+                    <div class="form-group">
+                        <label>Crew contact no.</label>
+                        <input type="text" class="form-control input-lg" />
+                    </div>
+                    <div class="form-group">
+                        <label><input type="checkbox">Deactivate</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Group information</h2>
+            <p>Each crew will be assigned a group and cleaning allocation will be for the group</p>
+        </div>
+        <div class="col-md-8">
+            <div class="panel ui_panel">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>Crew group</label>
+                        <select class="form-control input-lg">
+                            <option>Select</option>
+                        </select>
+                    </div>
+                    <a href="javascript://" class="link" data-toggle="modal" data-target="#create_new_group">Create a new group <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Contact information</h2>
+            <p>Crew member residential address</p>
+        </div>
+        <div class="col-md-8">
+            <div class="panel ui_panel">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Address 1" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Address 2" />
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control input-lg" placeholder="City" />
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control input-lg" placeholder="State" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Zipcode" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="create_new_group" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Create a new group</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Group name</label>
+            <input type="text" class="form-control input-lg" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal"><i class="fas fa-save"></i>Save</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
